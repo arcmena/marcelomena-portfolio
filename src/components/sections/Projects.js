@@ -49,9 +49,9 @@ const FeaturesSplit = ({
     );
 
     const sectionHeader = {
-        title: 'About Me',
+        title: 'Projects',
         paragraph:
-            'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.',
+            "Some of my projects that I've been working on the last months.",
     };
 
     return (
