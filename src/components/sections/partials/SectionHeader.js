@@ -16,8 +16,21 @@ const defaultProps = {
     tag: 'h2',
 };
 
-const SectionHeader = ({ className, data, children, tag, ...props }) => {
-    const classes = classNames('section-header', className);
+const SectionHeader = ({
+    className,
+    data,
+    children,
+    tag,
+    elseClasses,
+    sectionHeader,
+    paragraphhStyles,
+    ...props
+}) => {
+    const classes = classNames(
+        sectionHeader && 'section-header',
+        className,
+        paragraphhStyles,
+    );
 
     const Component = tag;
 
@@ -32,13 +45,16 @@ const SectionHeader = ({ className, data, children, tag, ...props }) => {
                                 className={classNames(
                                     'mt-0',
                                     data.paragraph ? 'mb-16' : 'mb-0',
+                                    `${elseClasses}`,
                                 )}
                             >
                                 {data.title}
                             </Component>
                         )}
                         {data.paragraph && (
-                            <p className="m-0">{data.paragraph}</p>
+                            <p className={`m-0 ${paragraphhStyles}`}>
+                                {data.paragraph}
+                            </p>
                         )}
                     </div>
                 </div>

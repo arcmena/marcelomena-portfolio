@@ -69,18 +69,15 @@ const FeaturesSplit = ({
                                 data-reveal-container=".split-item"
                             >
                                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                                    Lightning fast workflow
+                                    Next.JS + React
                                 </div>
-                                <h3 className="mt-0 mb-12">
-                                    Data-driven insights
-                                </h3>
+                                <h3 className="mt-0 mb-12">Pokéfinder</h3>
                                 <p className="m-0">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                    — Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat.
+                                    A quick and reliable Pokédex for your
+                                    Pokémon journey! Made using Next.JS
+                                    framework to implement a SSG (Static Site
+                                    Generation) solution in order to have
+                                    lightspeed loadings times!
                                 </p>
                             </div>
                             <div
@@ -91,10 +88,10 @@ const FeaturesSplit = ({
                                 data-reveal-container=".split-item"
                             >
                                 <Image
-                                    src={require('./../../assets/images/features-split-image-01.png')}
-                                    alt="Features split 01"
-                                    width={528}
-                                    height={396}
+                                    src={require('./../../assets/images/pokefinder.png')}
+                                    alt="Pokefinder"
+                                    width="100"
+                                    height="100"
                                 />
                             </div>
                         </div>
@@ -105,18 +102,14 @@ const FeaturesSplit = ({
                                 data-reveal-container=".split-item"
                             >
                                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                                    Lightning fast workflow
+                                    React Movie Social Media
                                 </div>
-                                <h3 className="mt-0 mb-12">
-                                    Data-driven insights
-                                </h3>
+                                <h3 className="mt-0 mb-12">Bloobuster</h3>
                                 <p className="m-0">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua
-                                    — Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat.
+                                    Bloobuster is an APP made to share tv shows
+                                    and movies experiences. Here you can publish
+                                    reviews, create posts and discuss about what
+                                    you loved... or hated about them.
                                 </p>
                             </div>
                             <div
@@ -127,9 +120,9 @@ const FeaturesSplit = ({
                                 data-reveal-container=".split-item"
                             >
                                 <Image
-                                    src={require('./../../assets/images/features-split-image-02.png')}
+                                    src={require('./../../assets/images/Bloobuster.png')}
                                     alt="Features split 02"
-                                    width={528}
+                                    width={100}
                                     height={396}
                                 />
                             </div>

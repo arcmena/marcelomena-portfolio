@@ -39,6 +39,7 @@ const Cta = ({
         topDivider && 'has-top-divider',
         bottomDivider && 'has-bottom-divider',
         split && 'cta-split',
+        'cta-container',
     );
 
     return (
@@ -49,7 +50,7 @@ const Cta = ({
                         <h3 className="m-0">Contact me at</h3>
                     </div>
                     <div className="cta-action">
-                        <Button>aasd</Button>
+                        <Button className="cta-button">aasd</Button>
                     </div>
                 </div>
             </div>

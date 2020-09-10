@@ -119,7 +119,7 @@ const Header = ({
                                             <SmoothScroll
                                                 to="about"
                                                 onClick={closeMenu}
-                                                duration="700"
+                                                duration={700}
                                             >
                                                 About me
                                             </SmoothScroll>
@@ -128,7 +128,7 @@ const Header = ({
                                             <SmoothScroll
                                                 to="technologies"
                                                 onClick={closeMenu}
-                                                duration="700"
+                                                duration={700}
                                             >
                                                 Technologies
                                             </SmoothScroll>
@@ -137,7 +137,7 @@ const Header = ({
                                             <SmoothScroll
                                                 to="projects"
                                                 onClick={closeMenu}
-                                                duration="700"
+                                                duration={700}
                                             >
                                                 Projects
                                             </SmoothScroll>
@@ -146,7 +146,7 @@ const Header = ({
                                             <SmoothScroll
                                                 to="contact"
                                                 onClick={closeMenu}
-                                                duration="700"
+                                                duration={700}
                                             >
                                                 Contact Me
                                             </SmoothScroll>

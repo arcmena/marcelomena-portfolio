@@ -52,7 +52,7 @@ const Hero = ({
                         </h1>
                         <div className="container-xs">
                             <p
-                                className="m-0 mb-32 reveal-from-bottom"
+                                className="m-0 mb-32 reveal-from-bottom title"
                                 data-reveal-delay="400"
                             >
                                 Front-End Developer

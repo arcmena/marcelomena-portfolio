@@ -54,6 +54,7 @@ const FeaturesTiles = ({
                     <SectionHeader
                         data={sectionHeader}
                         className="center-content"
+                        paragraphhStyles="tech-paragraph"
                     />
                     <div className={tilesClasses}>
                         <div
@@ -83,7 +84,7 @@ const FeaturesTiles = ({
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">Javascript</h4>
-                                    <p className="m-0 text-sm">
+                                    <p className="m-0 text-sm description">
                                         A powerfull scripting language, used
                                         both on client-side and server-side.
                                     </p>
@@ -108,7 +109,7 @@ const FeaturesTiles = ({
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">React</h4>
-                                    <p className="m-0 text-sm">
+                                    <p className="m-0 text-sm description">
                                         A JavaScript library for building
                                         dynamic user interfaces.
                                     </p>
@@ -139,7 +140,7 @@ const FeaturesTiles = ({
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">Node</h4>
-                                    <p className="m-0 text-sm">
+                                    <p className="m-0 text-sm description">
                                         A JavaScript runtime designed to build
                                         scalable web applications.
                                     </p>
@@ -169,7 +170,7 @@ const FeaturesTiles = ({
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">Sass</h4>
-                                    <p className="m-0 text-sm">
+                                    <p className="m-0 text-sm description">
                                         Powerfull CSS extension and language
                                         that helps to keep large style projects
                                         well-organized and easy to read.
@@ -195,9 +196,8 @@ const FeaturesTiles = ({
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">Next.JS</h4>
-                                    <p className="m-0 text-sm">
-                                        A React framework for production ready
-                                        applications that can dynamically
+                                    <p className="m-0 text-sm description">
+                                        A React framework that can dynamically
                                         generate static and server side rendered
                                         sites with React.
                                     </p>
@@ -242,11 +242,11 @@ const FeaturesTiles = ({
                                 </div>
                                 <div className="features-tiles-item-content">
                                     <h4 className="mt-0 mb-8">PostgreSQL</h4>
-                                    <p className="m-0 text-sm">
-                                        Duis aute irure dolor in reprehenderit
-                                        in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat.
+                                    <p className="m-0 text-sm description">
+                                        PostgreSQL is a powerful, open source
+                                        object-relational database system with
+                                        reliability, feature robustness, and
+                                        performance.
                                     </p>
                                 </div>
                             </div>

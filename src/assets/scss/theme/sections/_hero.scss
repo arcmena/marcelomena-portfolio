@@ -2,4 +2,9 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    background: color(hero);
+
+    .title {
+        color: color(about);
+    }
 }
