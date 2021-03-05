@@ -1,7 +1,6 @@
-import { Box, Container, Flex, Heading, Text } from '@chakra-ui/layout'
+import { Container, Flex, Heading, Link, Text } from '@chakra-ui/layout'
 
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 const Home = () => {
     return (
@@ -18,23 +17,9 @@ const Home = () => {
             </Head>
 
             <Container textAlign="center" maxW="container.xl">
-                <Flex justifyContent="center">
-                    <Heading size="3xl" as="h1" letterSpacing="wider">
-                        Welcome to my
-                    </Heading>
-                    <Heading
-                        size="3xl"
-                        as="h1"
-                        color="red.100"
-                        mx="4"
-                        letterSpacing="wider"
-                    >
-                        portfolio
-                    </Heading>
-                    <Heading size="3xl" as="h1" letterSpacing="wider">
-                        !
-                    </Heading>
-                </Flex>
+                <Heading letterSpacing="wider" size="3xl" as="h1">
+                    Welcome to my <Link color="red.100">portfolio</Link>!
+                </Heading>
 
                 <Heading size="lg" as="p" mt="4" letterSpacing="wider">
                     This is where I'll introduce myself!
