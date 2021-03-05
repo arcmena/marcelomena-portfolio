@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home = () => {
     return (
         <div className={styles.container}>
             <Head>
@@ -18,16 +18,8 @@ export default function Home() {
                     This is where I'll introduce myself!
                 </p>
             </main>
-
-            <footer className={styles.footer}>
-                <a
-                    href="https://github.com/arcmena"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    arcmena
-                </a>
-            </footer>
         </div>
     )
 }
+
+export default Home
