@@ -1,6 +1,7 @@
 import { Container, Flex, Heading, Link } from '@chakra-ui/layout'
 
 import { GithubIcon, LinkedInIcon } from 'components/ui'
+import Redirects from 'utils/Redirects'
 
 const Hero = () => {
     return (
@@ -25,26 +26,30 @@ const Hero = () => {
                 </Heading>
 
                 <Container>
-                    <GithubIcon
-                        viewBox="0 0 50 50"
-                        w={45}
-                        h={45}
-                        color="gray.200"
-                        transition="all 0.3s ease"
-                        cursor="pointer"
-                        _hover={{ color: 'red.100' }}
-                        mr="3"
-                    />
-                    <LinkedInIcon
-                        viewBox="0 0 50 50"
-                        w={45}
-                        h={45}
-                        color="gray.200"
-                        transition="all 0.3s ease"
-                        cursor="pointer"
-                        _hover={{ color: 'red.100' }}
-                        ml="3"
-                    />
+                    <Link href={Redirects.github} target="_blank">
+                        <GithubIcon
+                            viewBox="0 0 50 50"
+                            w={45}
+                            h={45}
+                            color="gray.200"
+                            transition="all 0.3s ease"
+                            cursor="pointer"
+                            _hover={{ color: 'red.100' }}
+                            mr="3"
+                        />
+                    </Link>
+                    <Link href={Redirects.linkedin} target="_blank">
+                        <LinkedInIcon
+                            viewBox="0 0 50 50"
+                            w={45}
+                            h={45}
+                            color="gray.200"
+                            transition="all 0.3s ease"
+                            cursor="pointer"
+                            _hover={{ color: 'red.100' }}
+                            ml="3"
+                        />
+                    </Link>
                 </Container>
             </Container>
         </Flex>
