@@ -8,7 +8,7 @@ const Hero = () => {
             height="100vh"
             justifyContent="center"
             alignItems="center"
-            background="gray.900"
+            background="black.100"
             color="gray.200"
             bgImage="url('/backgrounds/hero-bg.svg')"
             bgPosition="bottom right"
