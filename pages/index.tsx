@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
-import { Container, Flex, Heading, Link } from '@chakra-ui/layout'
-import { Hero } from '../components/ui'
+
+import { Header, Hero } from 'components/ui'
 
 const Home = () => {
     return (
@@ -11,6 +11,7 @@ const Home = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            <Header />
             <Hero />
         </Fragment>
     )

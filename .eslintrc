@@ -10,7 +10,10 @@
         "standard",
         "prettier/@typescript-eslint",
         "prettier/standard",
-        "prettier/react"
+        "prettier/react",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,10 +23,25 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "plugins": ["react", "@typescript-eslint", "prettier", "import"],
     "rules": {
         "prettier/prettier": "error",
         "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal"],
+                "newlines-between": "always-and-inside-groups"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {},
+            "node": {
+                "extensions": [".ts", ".tsx"]
+            }
+        }
     }
 }

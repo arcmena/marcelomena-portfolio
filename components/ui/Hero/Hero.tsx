@@ -1,6 +1,6 @@
 import { Container, Flex, Heading, Link } from '@chakra-ui/layout'
 
-import { GithubIcon, LinkedInIcon } from '../Icons'
+import { GithubIcon, LinkedInIcon } from 'components/ui'
 
 const Hero = () => {
     return (
