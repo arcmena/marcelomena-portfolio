@@ -1,4 +1,4 @@
-import { HStack, Link } from '@chakra-ui/layout'
+import { Flex, HStack, Link } from '@chakra-ui/layout'
 
 import NavItems from 'utils/NavItems'
 
@@ -12,10 +12,23 @@ const Header = () => {
             top="0"
             listStyleType="none"
             color="gray.200"
+            fontSize="lg"
+            minW="100%"
+            display="flex"
+            justifyContent="flex-end"
+            px="14"
+            py="2"
+            transition="color 0.2s ease"
+            bg="rgba(19, 19, 19, 0.12)"
         >
             {NavItems.map(({ name, href }) => (
                 <li key={name}>
-                    <Link href={href}>{name}</Link>
+                    <Link
+                        href={href}
+                        _hover={{ textDecoration: 'none', color: 'red.100' }}
+                    >
+                        {name}
+                    </Link>
                 </li>
             ))}
         </HStack>
