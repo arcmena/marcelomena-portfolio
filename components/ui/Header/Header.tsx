@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <HStack
             as="ul"
-            spacing={4}
+            spacing={10}
             height="16"
             position="fixed"
             top="0"
@@ -16,8 +16,8 @@ const Header = () => {
             minW="100%"
             display="flex"
             justifyContent="flex-end"
-            px="14"
-            py="2"
+            px="12"
+            py="10"
             transition="color 0.2s ease"
             bg="rgba(19, 19, 19, 0.12)"
         >
