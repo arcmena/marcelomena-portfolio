@@ -5,12 +5,12 @@ import NavItems from 'utils/NavItems'
 const Header = () => {
     return (
         <Box
-            bg="rgba(19, 19, 19, 0.12)"
             minW="100%"
             display="flex"
             justifyContent="flex-end"
             position="fixed"
             top="0"
+            style={{ backdropFilter: 'saturate(180%) blur(14px)' }}
         >
             <HStack
                 as="div"
@@ -19,7 +19,7 @@ const Header = () => {
                 color="gray.200"
                 fontSize="lg"
                 px="12"
-                py="10"
+                py="6"
                 transition="color 0.2s ease"
             >
                 {NavItems.map(({ name, href }) => (
