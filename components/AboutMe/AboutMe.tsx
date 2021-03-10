@@ -1,7 +1,7 @@
 import { Box, Heading, Link, Text } from '@chakra-ui/layout'
 import Section from 'components/ui/Section'
 
-const aboutText =
+const sectionText =
     "My name is Marcelo, I'm 20 years old and I'm a Front-End Developer. Been in the area for around 2 years, first started with Java in 2018 and worked my way into web development with JavaScript in 2019. Started working in the area as Software Developer in a financial company on their .NET / Javascript application. Lately have been working as Front-End Developer on a health and care company, developing with React, Node and Django. On my free time been working on personal projects and some freelancing jobs."
 
 const AboutMe = () => {
@@ -27,7 +27,7 @@ const AboutMe = () => {
                 </Heading>
 
                 <Text mt="4" fontSize="lg">
-                    {aboutText}
+                    {sectionText}
                 </Text>
             </Box>
         </Section>
