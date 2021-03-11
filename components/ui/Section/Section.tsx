@@ -4,7 +4,11 @@ import { PropsWithChildren } from 'react'
 type SectionProps = FlexProps & PropsWithChildren<{}>
 
 const Section = ({ children, ...rest }: SectionProps) => {
-    return <Flex {...rest}>{children}</Flex>
+    return (
+        <Flex as="section" {...rest}>
+            {children}
+        </Flex>
+    )
 }
 
 export default Section

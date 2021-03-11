@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <Fragment>
             <Head>
-                <title>Marcelo Mena</title>
+                <title>Marcelo Mena | Front-End Developer</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

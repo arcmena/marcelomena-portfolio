@@ -52,7 +52,7 @@ const AboutMe = () => {
                     mt="6"
                 >
                     {skills.map(({ name, desc, pattern }) => (
-                        <SkillItem name={name} desc={desc} pattern={pattern} />
+                        <SkillItem key={name} name={name} desc={desc} pattern={pattern} />
                     ))}
                 </Stack>
             </Box>

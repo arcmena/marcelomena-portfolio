@@ -23,7 +23,8 @@ const AboutMe = () => {
                 py="12"
             >
                 <Heading color="gray.900">
-                    About <Link color="red.100">m</Link>e
+                    <Link color="red.100">A</Link>bout{' '}
+                    <Link color="red.100">m</Link>e
                 </Heading>
 
                 <Text mt="4" fontSize="lg">
