@@ -24,7 +24,6 @@ const Projects = () => {
             px="6"
             bgImage="url('/backgrounds/section-bg-2.svg')"
             bgPosition="top right"
-            bgSize="contain"
             bgRepeat="no-repeat"
         >
             <Box
