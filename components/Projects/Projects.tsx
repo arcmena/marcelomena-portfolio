@@ -1,8 +1,20 @@
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/layout'
 
+import Project from 'components/Project'
 import Section from 'components/ui/Section'
 
 const sectionText = 'Some of the projects I’ve developed for practice.'
+
+const projects = [
+    {
+        name: 'arctiChat',
+        image: '/images/arctichat.jpg'
+    },
+    {
+        name: 'Adventurer Shop',
+        image: '/images/adventurershop.jpg'
+    }
+]
 
 const Projects = () => {
     return (
@@ -38,7 +50,9 @@ const Projects = () => {
                     alignItems="center"
                     mt="6"
                 >
-                    Projects here
+                    {projects.map(({ name, image }) => (
+                        <Project name={name} image={image} />
+                    ))}
                 </Stack>
             </Box>
         </Section>
