@@ -19,7 +19,7 @@ const projects = [
 const Projects = () => {
     return (
         <Section
-            id="skills"
+            id="projects"
             bg="white"
             px="6"
             bgImage="url('/backgrounds/section-bg-2.svg')"

@@ -4,6 +4,7 @@ import { Header, Hero } from 'components/ui'
 import AboutMe from 'components/AboutMe'
 import Skills from 'components/Skills'
 import Projects from 'components/Projects'
+import ContactMe from 'components/ContactMe'
 
 const Layout = () => {
     return (
@@ -13,6 +14,7 @@ const Layout = () => {
             <AboutMe />
             <Skills />
             <Projects />
+            <ContactMe />
         </Box>
     )
 }
