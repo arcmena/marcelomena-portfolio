@@ -14,17 +14,20 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    transition: font-size 0.2s;
+    transition: font-size 0.2s, background-color 0.2s ease;
 
     height: 120px;
     width: 120px;
+
+    cursor: pointer;
+    border-radius: 4px;
 
     .text {
         font-size: 0px;
     }
 
     &:hover {
-        background-color: rgba(92, 92, 92, 1);
+        background-color: rgba(92, 92, 92, 0.7);
 
         .text {
             font-size: 18px;
@@ -41,7 +44,6 @@ const IconSwitch = (name: string) => {
                     w={45}
                     h={45}
                     color="gray.200"
-                    cursor="pointer"
                 />
             )
         }
@@ -52,19 +54,12 @@ const IconSwitch = (name: string) => {
                     w={45}
                     h={45}
                     color="gray.200"
-                    cursor="pointer"
                 />
             )
         }
         case 'Gmail': {
             return (
-                <GmailIcon
-                    viewBox="0 0 50 50"
-                    w={45}
-                    h={45}
-                    color="gray.200"
-                    cursor="pointer"
-                />
+                <GmailIcon viewBox="0 0 50 50" w={45} h={45} color="gray.200" />
             )
         }
         case 'Instagram': {
@@ -74,7 +69,6 @@ const IconSwitch = (name: string) => {
                     w={45}
                     h={45}
                     color="gray.200"
-                    cursor="pointer"
                 />
             )
         }
@@ -85,14 +79,18 @@ const IconSwitch = (name: string) => {
 
 const ContactItem = ({ name }) => {
     return (
-        <Container>
-            <Link href={Redirects.instagram} target="_blank">
+        <Link
+            href={Redirects.instagram}
+            target="_blank"
+            _hover={{ textDecoration: 'none' }}
+        >
+            <Container>
                 {IconSwitch(name)}
-            </Link>
-            <Text className="text" color="gray.200" py="2">
-                {name}
-            </Text>
-        </Container>
+                <Text className="text" color="gray.200" py="2">
+                    {name}
+                </Text>
+            </Container>
+        </Link>
     )
 }
 
