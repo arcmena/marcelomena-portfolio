@@ -8,28 +8,36 @@ import {
 } from 'components/ui'
 import Redirects from 'utils/Redirects'
 
-const Container = styled.div`
+const Container = styled.a`
+    cursor: pointer;
+    border-radius: 4px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    transition: font-size 0.2s, background-color 0.2s ease;
-
     height: 120px;
     width: 120px;
 
-    cursor: pointer;
-    border-radius: 4px;
+    transition: background-color, 0.2s;
 
-    .text {
-        font-size: 0px;
+    margin: 16px;
+
+    span {
+        font-size: 0;
+
+        padding: 10px 0;
+
+        color: #e2e8f0;
+
+        transition: font-size 0.2s;
     }
 
     &:hover {
         background-color: rgba(92, 92, 92, 0.7);
 
-        .text {
+        span {
             font-size: 18px;
         }
     }
@@ -77,20 +85,16 @@ const IconSwitch = (name: string) => {
     }
 }
 
-const ContactItem = ({ name }) => {
+type ContactItemProps = {
+    name: string
+}
+
+const ContactItem = ({ name }: ContactItemProps) => {
     return (
-        <Link
-            href={Redirects.instagram}
-            target="_blank"
-            _hover={{ textDecoration: 'none' }}
-        >
-            <Container>
-                {IconSwitch(name)}
-                <Text className="text" color="gray.200" py="2">
-                    {name}
-                </Text>
-            </Container>
-        </Link>
+        <Container href={Redirects[name.toLowerCase()]} target="_blank">
+            {IconSwitch(name)}
+            <span>{name}</span>
+        </Container>
     )
 }
 

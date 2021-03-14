@@ -20,7 +20,7 @@ const Contacts = [
 
 const ContactMe = () => {
     return (
-        <Section id="contact" mb="12">
+        <Section id="contact" mb={[0, 0, 0, 12]}>
             <Box
                 flexDirection="column"
                 bgColor="black.100"
@@ -38,10 +38,10 @@ const ContactMe = () => {
                     <Link color="red.100">M</Link>e
                 </Heading>
 
-                <Stack
-                    spacing={16}
-                    direction={['column', 'column', 'column', 'row']}
+                <Box
+                    direction="row"
                     display="flex"
+                    flexWrap="wrap"
                     justifyContent="center"
                     alignItems="center"
                     mt="6"
@@ -49,7 +49,7 @@ const ContactMe = () => {
                     {Contacts.map(({ name }) => (
                         <ContactItem name={name} />
                     ))}
-                </Stack>
+                </Box>
             </Box>
         </Section>
     )
