@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react'
 import { Box, HStack, Link } from '@chakra-ui/layout'
 
 import NavItems from 'utils/NavItems'
+import MenuNav from '../MenuNav'
 
 const Header = () => {
     const [scrolledHero, setScrolledHero] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     const handleScroll = () =>
         setScrolledHero(window.scrollY > window.innerHeight)
@@ -24,16 +26,17 @@ const Header = () => {
             top="0"
             zIndex={2}
             style={{ backdropFilter: 'saturate(180%) blur(14px)' }}
+            px="12"
+            py="6"
         >
             <HStack
+                display={['none', 'inline']}
                 as="div"
                 spacing={10}
                 listStyleType="none"
                 color={scrolledHero ? 'black.100' : 'gray.200'}
                 fontWeight={scrolledHero && 'bold'}
                 fontSize="lg"
-                px="12"
-                py="6"
                 transition="color 0.2s ease"
             >
                 {NavItems.map(({ name, href }) => (
@@ -50,6 +53,13 @@ const Header = () => {
                     </span>
                 ))}
             </HStack>
+
+            <MenuNav
+                display={['inline', 'none']}
+                isOpen={isOpen}
+                handleNavClick={() => setIsOpen(!isOpen)}
+                scrolledHero={scrolledHero}
+            />
         </Box>
     )
 }
